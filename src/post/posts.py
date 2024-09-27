@@ -85,9 +85,7 @@ async def update_post(
     updated_post = schemas.PostUpdateModel(
         post_title=post_title, post_content=post_content, post_image=image_url
     )
-    post_updated = utils.update_post(
-        post_id, updated_post, current_user.user_id, session
-    )
+    post_updated = utils.update_post(post_id, updated_post, session)
     return post_updated
 
 
@@ -129,7 +127,7 @@ def add_comment_to_post(
 @post_router.put(
     "/comments/{comment_id}/", response_model=schemas.CommentOutModel, status_code=201
 )
-def update_post(
+def update_comment(
     comment_id: int,
     new_comment: schemas.CommentBaseModel,
     current_user: Payload = Depends(get_current_user),
@@ -142,7 +140,7 @@ def update_post(
 
 
 @post_router.delete("/comments/{comment_id}/", response_model=schemas.DeleteOutModel)
-def delete_post(
+def delete_comment(
     comment_id: int,
     current_user: Payload = Depends(get_current_user),
     session: Session = Depends(get_session),
