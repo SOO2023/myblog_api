@@ -17,7 +17,7 @@ h11==0.14.0
 idna==3.7
 Jinja2==3.1.4
 MarkupSafe==2.1.5
-mega.py==1.0.8
+git+https://github.com/SOO2023/mega.py.git
 mysql==0.0.3
 mysql-connector-python==9.0.0
 mysqlclient==2.2.4
