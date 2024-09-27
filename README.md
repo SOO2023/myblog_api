@@ -8,7 +8,7 @@ MyBlog is a role based (user, admin) blogging platform that allows users to crea
 - **Blog Management:** Create, edit, and delete posts with hashtags, likes, and comments.
 - **Administrative Control:** Admin can manage users (block, deactivate, delete).
 - **Cloud Storage:** Integration with Mega.nz for file storage.
-- **API Documentation:** Full API available at [MyBlog Docs](http://www.sample.com/docs).
+- **API Documentation:** Full API available at [MyBlog Docs](https://myblog-ysd9.onrender.com/docs).
 
 ## Technology Stack
 
