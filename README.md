@@ -1,6 +1,6 @@
 # MyBlog
 
-MyBlog is a blogging platform that allows users to create, manage, and interact with blog posts. It features user authentication, post creation, and comment interaction, along with administrative controls for managing users. The project uses **PostgreSQL** as the database (via **neon.tech**), **Mega.nz** for cloud storage, and is deployed on **Render**.
+MyBlog is a role based (user, admin) blogging platform that allows users to create, manage, and interact with blog posts. It features user authentication, post creation, and comment interaction, along with administrative controls for managing users. The project uses **PostgreSQL** as the database (via **neon.tech**), **Mega.nz** for cloud storage, and is deployed on **Render**.
 
 ## Features
 
@@ -122,6 +122,59 @@ MyBlog is a blogging platform that allows users to create, manage, and interact 
 ## Setup
 
 1. **Clone the repository:**
+
    ```bash
-   git clone https://github.com/yourusername/myblog.git
+   git clone https://github.com/SOO2023/myblog_api.git
    cd myblog
+
+   ```
+
+2. **Create a virtual environment:**
+
+   ```bash
+   # For Linux/macOS
+    python3 -m venv venv
+    source venv/bin/activate
+
+    # For Windows
+    python -m venv venv
+    venv\Scripts\activate
+
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set up environment variables:**
+
+   ```bash
+   DEFAULT_PROFILE_IMAGE
+   SECRET_KEY
+   ALGORITHM
+   DB_URL
+   MAIL_USERNAME
+   MAIL_PASSWORD
+   MAIL_FROM
+   MAIL_PORT
+   MAIL_SERVER
+   MAIL_FROM_NAME
+   HOST_SERVER
+   MEGA_PASSWORD
+   PROFLE_IMAGE_FOLDER
+   POST_IMAGE_FOLDER
+   ```
+
+5. **Run the application:**
+
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+6. **Run the application:**
+
+   ```bash
+   http://127.0.0.1:8000/docs
+   ```
