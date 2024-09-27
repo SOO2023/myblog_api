@@ -163,7 +163,7 @@ def like_post(
     return post
 
 
-@post_router.delete("/{post_id}/remove-like/", response_model=schemas.DeleteOutModel)
+@post_router.delete("/{post_id}/like/", response_model=schemas.DeleteOutModel)
 def remove_like_from_post(
     post_id: int,
     current_user: Payload = Depends(get_current_user),
@@ -186,7 +186,7 @@ def dislike_post(
 
 
 @post_router.delete(
-    "/{post_id}/remove-dislike/", response_model=schemas.PostOutModel, status_code=201
+    "/{post_id}/dislike/", response_model=schemas.PostOutModel, status_code=201
 )
 def remove_dislike_from_post(
     post_id: int,

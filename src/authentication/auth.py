@@ -185,7 +185,7 @@ def update_password(
     user = utils.get_user_by_email(email=email, session=session)
     user.password_hash = hash_verify_pwd.hash_password(new_password)
     session.commit()
-    return {"message": "Password updated successly."}
+    return {"message": "Password updated successfully."}
 
 
 @auth_router.post(
@@ -246,7 +246,7 @@ def get_users(
     return users
 
 
-@auth_router.get("/users/{user_id}/deactivate")
+@auth_router.get("/users/{user_id}/deactivate/")
 def deactivate_user(
     user_id: int,
     current_user: schemas.Payload = Depends(get_current_user),
@@ -291,11 +291,11 @@ def delete_user_by_email(
     return JSONResponse(content={"message": "user not found"}, status_code=404)
 
 
-@auth_router.post("/send-sample-email/")
-async def send_sample_email(email: list[EmailStr] = Body()):
-    html = """
-        <h1>This is a sample message</h1>
-    """
-    subject = "MyBlog - Sample Email"
-    await send_email(email=email, subject=subject, html=html)
-    return {"message": "Email sent successfully"}
+# @auth_router.post("/send-sample-email/")
+# async def send_sample_email(email: list[EmailStr] = Body()):
+#     html = """
+#         <h1>This is a sample message</h1>
+#     """
+#     subject = "MyBlog - Sample Email"
+#     await send_email(email=email, subject=subject, html=html)
+#     return {"message": "Email sent successfully"}
