@@ -4,10 +4,11 @@
 
 ## Features
 
-- **User Authentication:** Signup, login, password reset, profile management.
-- **Blog Management:** Create, edit, and delete posts with hashtags, likes, and comments.
-- **Administrative Control:** Admin can manage users (block, deactivate, delete).
-- **Cloud Storage:** Integration with Mega.nz for file storage.
+- **Implemented User Authentication**: Signup, login, password reset, profile management with JWT authentication.
+- **Developed Blog Post Features**: CRUD operations for posts, hashtag categorization, like/dislike functionality, and comment management.
+- **Admin Dashboard**: Allowed admin users to manage user accounts (block, deactivate, delete) and monitor platform activity.
+- **Cloud Integration**: Used Mega.nz for cloud storage of media files (profile images and post media).
+- **Deployed on Render**: Leveraged Render for continuous deployment and PostgreSQL (neon.tech) as the database backend.
 - **API Documentation:** Full API available at [MyBlog Docs](https://myblog-ysd9.onrender.com/docs).
 
 ## Technology Stack

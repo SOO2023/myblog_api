@@ -8,12 +8,13 @@ from .error import add_error_handlers
 description = """
 **MyBlog** is a role-based blogging platform with user and admin roles. It allows users to create, manage, and interact with blog posts while providing administrators the ability to manage users and content. The project uses **PostgreSQL** as the database (via **neon.tech**), **Mega.nz** for cloud storage, and is deployed on **Render**.
 
-## Features
+## Key Features
 
-- **User Authentication:** Signup, login, password reset, profile management.
-- **Blog Management:** Create, edit, and delete posts with hashtags, likes, and comments.
-- **Administrative Control:** Admin can manage users (block, deactivate, delete).
-- **Cloud Storage:** Integration with Mega.nz for file storage.
+- **Implemented User Authentication**: Signup, login, password reset, profile management with JWT authentication.
+- **Developed Blog Post Features**: CRUD operations for posts, hashtag categorization, like/dislike functionality, and comment management.
+- **Admin Dashboard**: Allowed admin users to manage user accounts (block, deactivate, delete) and monitor platform activity.
+- **Cloud Integration**: Used Mega.nz for cloud storage of media files (profile images and post media).
+- **Deployed on Render**: Leveraged Render for continuous deployment and PostgreSQL (neon.tech) as the database backend.
 - **GitHub Repo:** https://github.com/SOO2023/myblog_api.
 
 """
