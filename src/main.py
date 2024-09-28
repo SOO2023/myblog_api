@@ -15,7 +15,7 @@ description = """
 - **Admin Dashboard**: Allowed admin users to manage user accounts (block, deactivate, delete) and monitor platform activity.
 - **Cloud Integration**: Used Mega.nz for cloud storage of media files (profile images and post media).
 - **Deployed on Render**: Leveraged Render for continuous deployment and PostgreSQL (neon.tech) as the database backend.
-- **GitHub Repo:** https://github.com/SOO2023/myblog_api.
+- **GitHub Repo:** [https://github.com/SOO2023/myblog_api](https://github.com/SOO2023/myblog_api).
 
 """
 
