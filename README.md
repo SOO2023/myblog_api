@@ -1,6 +1,6 @@
 # MyBlog
 
-Developed a role-based blogging platform with user and admin roles. MyBlog allows users to create, manage, and interact with blog posts while providing administrators the ability to manage users and content. The project uses **PostgreSQL** as the database (via **neon.tech**), **Mega.nz** for cloud storage, and is deployed on **Render**.
+**MyBlog** is a role-based blogging platform with user and admin roles. Itallows users to create, manage, and interact with blog posts while providing administrators the ability to manage users and content. The project uses **PostgreSQL** as the database (via **neon.tech**), **Mega.nz** for cloud storage, and is deployed on **Render**.
 
 ## Features
 
